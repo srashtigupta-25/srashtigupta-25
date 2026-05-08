@@ -16,4 +16,4 @@ Backend Engineer | 5+ years building production systems | MS CS @ Northeastern (
 - **Adaptive Concurrent Web Server** - Rust-based server reducing P99 latency by 40%
 
 ## Connect
-📧 sg.srashtigupta@gmail.com | 💼 [LinkedIn]([your-link](https://www.linkedin.com/in/srashti-gupta-07b634151/)) 
+📧 sg.srashtigupta@gmail.com | 💼 [LinkedIn]([https://www.linkedin.com/in/srashti-gupta-07b634151/]) 
