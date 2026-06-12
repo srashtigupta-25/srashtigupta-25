@@ -9,7 +9,7 @@
 [![Email](https://img.shields.io/badge/Email-sg.srashtigupta@gmail.com-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:sg.srashtigupta@gmail.com)
 [![Resume](https://img.shields.io/badge/Resume-Download-4CAF50?style=flat-square&logo=adobeacrobatreader&logoColor=white)](https://srashtigupta-25.github.io/resume.pdf)
 
-**Open to Summer 2026 SWE Internship · Available May-August 2026**
+**Open to 2026 SWE Internship · Available July-December 2026**
 
 </div>
 
@@ -17,7 +17,7 @@
 
 ## What I Build
 
-I build full stack systems that scale - distributed backend APIs handling millions of requests, AI-powered serverless pipelines on AWS, and React frontends. Over 5 years at **NAB, IBM, and Capgemini**, I've shipped production software for banking, enterprise, and global clients. Most recently I shipped **Sage** — a live AI research synthesizer on AWS Bedrock.
+I build full stack systems that scale - distributed backend APIs handling millions of requests, AI-powered serverless pipelines on AWS, and React frontends. Over 5 years at **NAB, IBM, and Capgemini**, I've shipped production software for banking, enterprise, and global clients. Most recently I shipped **Sage** - a live AI research synthesizer on AWS Bedrock.
 
 ---
 
@@ -115,7 +115,7 @@ Concepts       Generative AI · Prompt Engineering · Serverless · System Desig
 
 ![GitHub Activity](https://ghchart.rshah.org/c8622a/srashtigupta-25)
 
-**Open to Summer 2026 SWE internship opportunities in the US · Available May–August 2026**
+**Open to 2026 SWE internship opportunities in the US · Available July–December 2026**
 
 [Portfolio](https://srashtigupta-25.github.io) · [LinkedIn](https://linkedin.com/in/srashti-gupta-07b634151) · [sg.srashtigupta@gmail.com](mailto:sg.srashtigupta@gmail.com)
 
