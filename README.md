@@ -9,7 +9,7 @@
 [![Email](https://img.shields.io/badge/Email-sg.srashtigupta@gmail.com-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:sg.srashtigupta@gmail.com)
 [![Resume](https://img.shields.io/badge/Resume-Download-4CAF50?style=flat-square&logo=adobeacrobatreader&logoColor=white)](https://srashtigupta-25.github.io/resume.pdf)
 
-**Open to Summer 2026 SWE Internship · Available May–August 2026**
+**Open to Summer 2026 SWE Internship · Available May-August 2026**
 
 </div>
 
@@ -17,7 +17,7 @@
 
 ## What I Build
 
-I build full stack systems that scale — distributed backend APIs handling millions of requests, AI-powered serverless pipelines on AWS, and React frontends. Over 5 years at **NAB, IBM, and Capgemini**, I've shipped production software for banking, enterprise, and global clients. Most recently I shipped **Sage** — a live AI research synthesizer on AWS Bedrock.
+I build full stack systems that scale - distributed backend APIs handling millions of requests, AI-powered serverless pipelines on AWS, and React frontends. Over 5 years at **NAB, IBM, and Capgemini**, I've shipped production software for banking, enterprise, and global clients. Most recently I shipped **Sage** — a live AI research synthesizer on AWS Bedrock.
 
 ---
 
@@ -25,7 +25,7 @@ I build full stack systems that scale — distributed backend APIs handling mill
 
 > **Ask anything. Understand everything.** · [Try it Live →](https://d1kbvlvilht945.cloudfront.net)
 
-A production-grade AI research platform that decomposes any topic into parallel research threads, grounds findings in real-time web data, and delivers a structured intelligence brief in **under 45 seconds** — built entirely on AWS serverless infrastructure.
+A production-grade AI research platform that decomposes any topic into parallel research threads, grounds findings in real-time web data, and delivers a structured intelligence brief in **under 45 seconds** - built entirely on AWS serverless infrastructure.
 
 ```
 POST /reports
@@ -53,7 +53,7 @@ Deployed: S3 + CloudFront · Cognito auth · PDF export · Mobile responsive
 |---|---|
 | AWS Lambda (9 functions) | Serverless Java 25 handlers — zero server management |
 | Step Functions | 5-state chain-of-thought pipeline with parallel Map execution |
-| Amazon Bedrock | Claude Haiku 4.5 — decompose, research, synthesize |
+| Amazon Bedrock | Claude Haiku 4.5 - decompose, research, synthesize |
 | DynamoDB | Per-user report isolation, on-demand billing |
 | CloudFront + S3 | Global CDN, HTTPS, sub-50ms load times worldwide |
 | Cognito | User signup, email verification, JWT authorization |
@@ -72,7 +72,7 @@ Multi-threaded Rust web server with adaptive worker pool that dynamically scales
 `Rust` `Python` `Shell Scripting` `OS-level concurrency` `Systems Programming`
 
 ### [Streaming Analytics Data Warehouse](https://github.com/srashtigupta-25/Streaming-Analytics-Data-Warehouse)
-Year-partitioned star schema in cloud-hosted MySQL with a Dockerized R-based ETL pipeline — processes 98K+ streaming transaction records across 3+ years of viewership data.
+Year-partitioned star schema in cloud-hosted MySQL with a Dockerized R-based ETL pipeline - processes 98K+ streaming transaction records across 3+ years of viewership data.
 
 `R` `MySQL` `Docker` `ETL` `Star Schema` `Data Engineering`
 
