@@ -2,12 +2,14 @@
 
 # Hi, I'm Srashti Gupta
 
-**Software engineer · MS Computer Science @ Northeastern University · 4.0 GPA**
+### Production software engineer building AI-powered systems
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-Visit-c7ff55?style=for-the-badge&logo=safari&logoColor=07110f)](https://srashtigupta-25.github.io)
+**5+ years of engineering experience · MS Computer Science @ Northeastern University · 4.0 GPA**
+
+[![Portfolio](https://img.shields.io/badge/Portfolio-Explore_my_work-2459D3?style=for-the-badge&logo=safari&logoColor=white)](https://srashtigupta-25.github.io)
+[![Résumé](https://img.shields.io/badge/Résumé-View-13203A?style=for-the-badge&logo=readthedocs&logoColor=white)](https://srashtigupta-25.github.io/resume.pdf)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/srashti-gupta-07b634151)
-[![Email](https://img.shields.io/badge/Email-Say_Hello-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:sg.srashtigupta@gmail.com)
-[![Résumé](https://img.shields.io/badge/Résumé-View-15211d?style=for-the-badge&logo=readthedocs&logoColor=white)](https://srashtigupta-25.github.io/resume.pdf)
+[![Email](https://img.shields.io/badge/Email-Say_hello-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:sg.srashtigupta@gmail.com)
 
 **Open to software engineering internship opportunities in the US**
 
@@ -15,80 +17,124 @@
 
 ---
 
-## A little about me
+## What I bring
 
-I build backend systems, cloud applications, and full-stack products. Before starting my master's at Northeastern, I spent more than five years shipping production software at **NAB, IBM, and Capgemini**.
+My background is in production backend and distributed systems engineering. I spent more than five years building banking and enterprise software at **NAB, IBM, and Capgemini** before starting my master's at Northeastern.
 
-The work I enjoy most sits close to real engineering constraints: latency, reliability, concurrency, deployment, and the occasional distributed-system mystery that only appears at 2 a.m.
+Now I am applying that foundation to LLM workflows, multi-agent systems, and serverless AI products. I care about the parts that turn a promising prototype into dependable software: API design, latency, failure handling, testing, deployment, and observability.
 
-- Reduced API latency by **35%** across services handling **1M+ daily requests**
-- Migrated **20 banking microservices** from Java 8 to Java 17
-- Earned **STAR, SPOT, and Team Excellence awards**
-- Currently exploring multi-agent systems, serverless architecture, and systems programming
+| Production engineering | AI systems | Measured impact |
+|---|---|---|
+| Java, Spring Boot, AWS, microservices | Python, LangChain, LangGraph, LLM APIs | **35%** lower API latency |
+| Distributed and event-driven systems | Multi-agent orchestration, Bedrock, Claude | **1M+** requests handled daily |
+| Docker, Kubernetes, Kafka, CI/CD | Grounded web research and tool-calling agents | **3** industry awards |
 
 ---
 
-## What I'm building
+## Featured AI systems
 
-### [Alpha Sign](https://alphasign.trade/) · Multi-agent financial intelligence
+### [Sage Research Synthesizer](https://d1kbvlvilht945.cloudfront.net)
 
-Alpha Sign turns a ticker symbol into live narrative research, quantitative market analysis, regime detection, and an executive PDF report.
+**A serverless LLM research system built in Java and AWS.**
 
-- Coordinates four specialist agents through a structured research loop
-- Streams live agent activity to a Next.js dashboard with Server-Sent Events
-- Combines market data, news research, Kalman-style forecasting, and report generation
+Sage decomposes a topic into three research paths, grounds each path in live web data, runs the work in parallel through Amazon Bedrock, and returns a structured brief in under **45 seconds**.
 
-**Stack:** `Next.js` `TypeScript` `Python` `Multi-agent AI` `SSE` `Docker`
+```text
+Question
+   │
+   ▼
+API Gateway → Cognito → Java Lambda
+   │
+   ▼
+AWS Step Functions
+   ├── Decompose with Claude
+   ├── Research × 3 in parallel
+   │     └── Tavily web search + Claude on Bedrock
+   ├── Generate structured report
+   └── Persist to DynamoDB
+```
 
-[Live product →](https://alphasign.trade/) · [Repository →](https://github.com/srashtigupta-25/alpha-sign)
+- Cut research time by roughly **60%** compared with the sequential workflow
+- Built a five-state Step Functions pipeline with retry and execution visibility
+- Used nine Java 25 Lambda functions across orchestration, research, persistence, and retrieval
+- Added Cognito JWT authentication, PDF export, and CloudFront delivery
 
-### [Sage Research Synthesizer](https://d1kbvlvilht945.cloudfront.net) · Serverless GenAI
-
-Sage produces a structured research brief in under **45 seconds**. An AWS Step Functions pipeline runs three Bedrock research threads in parallel, grounds them in live web data, and stores the result in DynamoDB.
-
-**Result:** 60% faster than the original sequential workflow.
-
-**Stack:** `Java 25` `AWS Lambda` `Step Functions` `Amazon Bedrock` `DynamoDB` `React`
+**Stack:** `Java 25` `Amazon Bedrock` `Claude` `AWS Lambda` `Step Functions` `Tavily` `DynamoDB` `Cognito` `React`
 
 [Live demo →](https://d1kbvlvilht945.cloudfront.net) · [Repository →](https://github.com/srashtigupta-25/sage-research-synthesizer)
 
-### Adaptive Concurrent Web Server · Systems programming
+---
 
-I built a multithreaded Rust web server with an adaptive worker pool that scales with real-time request load.
+### [Alpha Sign](https://alpha-sign-zeta.vercel.app)
 
-**Result:** P99 latency fell from **1.73 ms to 1.04 ms**, a 40% reduction at **31,725 requests/second**.
+**A team-built, multi-agent financial intelligence platform.**
 
-**Stack:** `Rust` `Python` `Shell` `Concurrency` `Benchmarking`
+Alpha Sign coordinates four specialist agents to turn a ticker into narrative research, quantitative signals, regime analysis, and an executive report.
+
+I owned the **Narrative/News Agent** workflow and co-developed the **LangChain/LangGraph** agent layer with a teammate. My work covered ticker-aware news research, source reliability, multi-ticker support, narrative synthesis, and orchestration safeguards.
+
+```text
+Narrative / News Agent
+          │
+          ▼
+Signal Processing Agent → Latent State Agent
+          │                       │
+          └──────────┬────────────┘
+                     ▼
+              Executive Report
+```
+
+- Built an LLM-assisted news pipeline with source-quality checks and ticker filtering
+- Added structured agent messaging and live activity streaming through Server-Sent Events
+- Helped implement tool-calling workflows using LangChain and LangGraph
+- Supported market analysis, Kalman-style regime detection, and PDF report generation
+
+**Stack:** `Python` `LangChain` `LangGraph` `LLM APIs` `Next.js` `TypeScript` `SSE` `Docker`
+
+[Live demo →](https://alpha-sign-zeta.vercel.app) · [Team repository →](https://github.com/Dankguy17/AlphaSign) · [My commits →](https://github.com/Dankguy17/AlphaSign/commits/main/?author=srashtigupta-25)
+
+---
+
+## Systems and data projects
+
+### Adaptive Concurrent Web Server
+
+Built a multithreaded Rust server with an adaptive worker pool that scales with real-time request load.
+
+**Result:** Reduced P99 latency from **1.73 ms to 1.04 ms**—a 40% improvement at **31,725 requests/second**.
+
+`Rust` `Python` `Concurrency` `Load testing` `Systems programming`
 
 [Read the case study →](https://srashtigupta-25.github.io/StreetLegal-Webserver-presentation.pdf)
 
 ### [Streaming Analytics Data Warehouse](https://github.com/srashtigupta-25/Streaming-Analytics-Data-Warehouse)
 
-A Dockerized R ETL pipeline and year-partitioned MySQL star schema for **98K+ streaming records** across more than three years of viewership data.
+Built a Dockerized R ETL pipeline and year-partitioned MySQL star schema for **98K+ streaming records** across more than three years of viewership data.
 
-**Stack:** `R` `MySQL` `Docker` `ETL` `Data Engineering`
+`R` `MySQL` `Docker` `ETL` `Star schema`
 
 ---
 
-## Experience
+## Production experience
 
-| Company | Role | Selected impact |
+| Company | Role | Engineering impact |
 |---|---|---|
-| **NAB Global Innovation Center** | Senior Software Engineer | 35% lower API latency · 1M+ daily requests · 20-service Java migration |
-| **IBM India** | Software Engineer | 45% system performance improvement · 40% faster releases |
-| **Capgemini Engineering** | Software Engineer | 25% lower response time across 14 microservices · 98% test coverage |
+| **NAB Global Innovation Center** | Senior Software Engineer | Reduced API latency **35%** across 20+ services handling **1M+ daily requests**; migrated 20 banking microservices to Java 17; earned STAR and SPOT Awards |
+| **IBM India** | Software Engineer | Improved system performance **45%** with resilient microservice patterns; cut release cycles **40%** through Jenkins and Docker automation |
+| **Capgemini Engineering** | Software Engineer | Reduced response time **25%** across 14 microservices; achieved **98%** automated test coverage; earned Team Excellence Award |
 
 ---
 
-## Tools I use
+## Technical toolkit
 
 | Area | Technologies |
 |---|---|
+| **AI & LLM engineering** | LangChain, LangGraph, Amazon Bedrock, Claude, LLM APIs, multi-agent orchestration, prompt engineering |
 | **Languages** | Java, Python, Rust, JavaScript, TypeScript, SQL, C++, R |
-| **Backend** | Spring Boot, REST APIs, Microservices, JPA, Hibernate, FastAPI |
-| **Cloud & DevOps** | AWS, Docker, Kubernetes, Kafka, CI/CD, Linux |
-| **Data** | PostgreSQL, MySQL, MongoDB, Redis, DynamoDB, Oracle |
-| **Engineering** | Distributed systems, event-driven architecture, system design, TDD |
+| **Backend** | Spring Boot, REST APIs, Microservices, Spring Data JPA, Hibernate, FastAPI, Node.js |
+| **Cloud & platform** | AWS, Lambda, Step Functions, Docker, Kubernetes, Kafka, CI/CD, Linux |
+| **Data systems** | PostgreSQL, MySQL, MongoDB, Redis, DynamoDB, Oracle |
+| **Engineering** | Distributed systems, event-driven architecture, system design, TDD, performance engineering |
 
 ---
 
@@ -101,8 +147,8 @@ A Dockerized R ETL pipeline and year-partitioned MySQL star schema for **98K+ st
 
 <div align="center">
 
-If you're building backend infrastructure, cloud products, or systems that need to stay fast under load, I'd love to talk.
+I am interested in teams building backend platforms, cloud products, developer infrastructure, or production AI systems.
 
-[Portfolio](https://srashtigupta-25.github.io) · [LinkedIn](https://linkedin.com/in/srashti-gupta-07b634151) · [Email](mailto:sg.srashtigupta@gmail.com)
+[Portfolio](https://srashtigupta-25.github.io) · [Résumé](https://srashtigupta-25.github.io/resume.pdf) · [LinkedIn](https://linkedin.com/in/srashti-gupta-07b634151) · [Email](mailto:sg.srashtigupta@gmail.com)
 
 </div>
