@@ -95,7 +95,24 @@ Signal Processing Agent → Latent State Agent
 
 ---
 
-## Systems and data projects
+### [Autopsy Lab](https://autopsy-lab.vercel.app)
+
+**An AI incident reconstruction engine built in four hours at the Madison AI Hackathon.**
+
+Autopsy Lab converts raw system logs into an evidence-backed incident timeline, severity assessment, likely root cause, and prioritized remediation plan. After the hackathon, I hardened the prototype for public review with safer file processing, schema-validated LLM output, automated tests, CI, and a responsive interface.
+
+- Built the analysis API with FastAPI, Groq, Llama 3.3, and Pydantic
+- Added in-memory parsing for TXT, LOG, PDF, and DOCX files with size and type validation
+- Shipped a Next.js and TypeScript interface with sample mode and JSON report export
+- Added pytest, Playwright, GitHub Actions, Docker, and a unified Vercel deployment
+
+**Stack:** `Python` `FastAPI` `Groq` `Llama 3.3` `Pydantic` `Next.js` `TypeScript` `Playwright`
+
+[Live demo →](https://autopsy-lab.vercel.app) · [Repository →](https://github.com/srashtigupta-25/hackathon-1)
+
+---
+
+## Systems project
 
 ### Adaptive Concurrent Web Server
 
@@ -106,12 +123,6 @@ Built a multithreaded Rust server with an adaptive worker pool that scales with 
 `Rust` `Python` `Concurrency` `Load testing` `Systems programming`
 
 [Read the case study →](https://srashtigupta-25.github.io/StreetLegal-Webserver-presentation.pdf)
-
-### [Streaming Analytics Data Warehouse](https://github.com/srashtigupta-25/Streaming-Analytics-Data-Warehouse)
-
-Built a Dockerized R ETL pipeline and year-partitioned MySQL star schema for **98K+ streaming records** across more than three years of viewership data.
-
-`R` `MySQL` `Docker` `ETL` `Star schema`
 
 ---
 
