@@ -112,7 +112,7 @@ Autopsy Lab converts raw system logs into an evidence-backed incident timeline, 
 
 ---
 
-## Systems project
+## Systems and data projects
 
 ### Adaptive Concurrent Web Server
 
@@ -122,7 +122,19 @@ Built a multithreaded Rust server with an adaptive worker pool that scales with 
 
 `Rust` `Python` `Concurrency` `Load testing` `Systems programming`
 
-[Read the case study →](https://srashtigupta-25.github.io/StreetLegal-Webserver-presentation.pdf)
+[Team repository →](https://github.com/cs5600-sp26/project-webserver-team0100) · [Read the case study →](https://srashtigupta-25.github.io/StreetLegal-Webserver-presentation.pdf)
+
+### [Streaming Analytics Data Warehouse](https://github.com/srashtigupta-25/Streaming-Analytics-Data-Warehouse)
+
+Built a Dockerized R ETL pipeline and year-partitioned MySQL star schema for **98,472 streaming transaction records** across more than three years of viewership data.
+
+- Modeled 13 dimensions and one fact table for analytical querying
+- Built a reproducible Dockerized ETL workflow in R and MySQL
+- Surfaced a **34% Q4 2023 viewership increase** over Q4 2022
+
+`R` `MySQL` `Docker` `ETL` `Star schema` `Data modeling`
+
+[Repository →](https://github.com/srashtigupta-25/Streaming-Analytics-Data-Warehouse)
 
 ---
 
