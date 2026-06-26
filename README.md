@@ -118,7 +118,7 @@ Autopsy Lab converts raw system logs into an evidence-backed incident timeline, 
 
 Built a multithreaded Rust server with an adaptive worker pool that scales with real-time request load.
 
-**Result:** Reduced P99 latency from **1.73 ms to 1.04 ms**—a 40% improvement at **31,725 requests/second**.
+**Result:** Reduced P99 latency from **1.73 ms to 1.04 ms**, a 40% improvement at **31,725 requests/second**.
 
 `Rust` `Python` `Concurrency` `Load testing` `Systems programming`
 
@@ -163,8 +163,8 @@ Built a Dockerized R ETL pipeline and year-partitioned MySQL star schema for **9
 
 ## Education
 
-- **MS in Computer Science**, Northeastern University — GPA: **4.0**, expected May 2027
-- **BTech in Information Technology**, Banasthali Vidyapith — GPA: **3.7**
+- **MS in Computer Science**, Northeastern University, GPA: **4.0**, expected May 2027
+- **BTech in Information Technology**, Banasthali Vidyapith, GPA: **3.7**
 
 ---
 
